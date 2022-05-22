@@ -110,3 +110,56 @@ Use Flask to create the routes, as follows:
 * Join the station and measurement tables for some of the queries.
 
 * Use Flask `jsonify` to convert the API data into a valid JSON response object.
+
+
+#### Bonus -Temperature Analysis 2
+
+Planning for the trip dates of August 1 to August 7 of this year, but concerned that the weather will be less than ideal. Use historical data in the dataset to find out what the temperature has previously been for this timeframe.
+
+**Note:** `calc_temps` will accept a start date and end date in the format `%Y-%m-%d`. The function will return the minimum, average, and maximum temperatures for that range of dates.
+
+Complete the following steps:
+
+* Use the `calc_temps` function to calculate the minimum, average, and maximum temperatures for your trip using the matching dates from a previous year (for example, use "2017-08-01").
+
+* Plot the minimum, average, and maximum temperature from your previous query as a bar chart, as captured in the following steps and image:
+
+    * Use "Trip Avg Temp" as the title.
+
+    * Use the average temperature as the bar height (_y_ value).
+
+    * Use the peak-to-peak (TMAX-TMIN) value as the _y_ error bar (YERR).
+
+    ![temperature](Images/temperature.png)
+
+#### Daily Rainfall Average
+
+With an idea of the temperature, determine what the rainfall has been. To avoid experiencing rain the whole time! Complete the following steps:
+
+* Calculate the rainfall per weather station using the previous year's matching dates.
+
+    * Sort this in descending order by precipitation amount, and list the station, name, latitude, longitude, and elevation.
+
+### Daily Temperature Normals
+
+Calculate the daily normals for the duration of your trip. Normals are the averages for the minimum, average, and maximum temperatures.
+
+`Daily_normals` that will calculate the daily normals for a specific date. This date string will be in the format `%m-%d`. Use all historic TOBS that match that date string.
+
+Complete the following steps:
+
+* Set the start and end date of the trip.
+
+* Use the date to create a range of dates.
+
+* Strip off the year, and save a list of strings in the format `%m-%d`.
+
+* Use the `daily_normals` function to calculate the normals for each date string, and append the results to a list called `normals`.
+
+* Load the list of daily normals into a Pandas DataFrame, and set the index equal to the date.
+
+* Use Pandas to plot an area plot (`stacked=False`) for the daily normals, as shown in the following image:
+
+![daily-normals](Images/daily-normals.png)
+
+* Then complete by closing the session.
