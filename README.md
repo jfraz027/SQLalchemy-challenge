@@ -35,7 +35,8 @@ To perform an analysis of precipitation in the area, do the following:
 
 * Plot the results by using the DataFrame `plot` method, as shown in the following image:
 
-  ![precipitation](Images/precipitation.png)
+ ![image](https://user-images.githubusercontent.com/99145651/169887321-0e14042e-8528-466e-8399-66512fe001ce.png)
+ 
 
 * Use Pandas to print the summary statistics for the precipitation data.
 
@@ -63,7 +64,8 @@ To perform an analysis of stations in the area, do the following:
 
     * Plot the results as a histogram with `bins=12`, as shown in the following image:
 
-    ![station-histogram](Images/station-histogram.png)
+    ![image](https://user-images.githubusercontent.com/99145651/169887196-05eecacb-86f4-4bde-90eb-bde1f956a53c.png)
+
 
 * Close out the session.
 
@@ -105,6 +107,9 @@ Use Flask to create the routes, as follows:
 
     * When given the start and the end date, calculate the `TMIN`, `TAVG`, and `TMAX` for dates from the start date through the end date (inclusive).
 
+![image](https://user-images.githubusercontent.com/99145651/169888033-53278d3f-f952-4eb0-b57f-6255d6268a93.png)
+
+
 ## Key steps
 
 * Join the station and measurement tables for some of the queries.
@@ -123,7 +128,12 @@ Conduct an analysis to answer the following question: Hawaii is reputed to enjoy
 
     * Drop the date column.
 
+![image](https://user-images.githubusercontent.com/99145651/169888813-4a8074d7-9024-4c01-b74e-c3f58a70fdae.png)
+
 * Identify the average temperature in June at all stations across all available years in the dataset. Do the same for the temperature in December.
+
+![image](https://user-images.githubusercontent.com/99145651/169888939-9b0cd63a-c6d4-4a54-9bab-a1737415db2d.png)
+
 
 * Use the t-test to determine whether the difference in means, if any, is statistically significant. Will you use a paired t-test or an unpaired t-test? Why?
 
@@ -159,7 +169,8 @@ Complete the following steps:
 
     * Use the peak-to-peak (TMAX-TMIN) value as the _y_ error bar (YERR).
 
-    ![temperature](Images/temperature.png)
+    ![image](https://user-images.githubusercontent.com/99145651/169887561-80d051c2-49ad-4951-8878-91ebc6d959c6.png)
+
 
 #### Daily Rainfall Average
 
@@ -189,6 +200,6 @@ Complete the following steps:
 
 * Use Pandas to plot an area plot (`stacked=False`) for the daily normals, as shown in the following image:
 
-![daily-normals](Images/daily-normals.png)
+![image](https://user-images.githubusercontent.com/99145651/169887650-1f3932f0-e58a-4b13-9bb7-6c6edcb87aed.png)
 
 * Then complete by closing the session.
