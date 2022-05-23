@@ -141,19 +141,6 @@ For example, a significance level of 0.05 indicates a 5% risk of concluding that
 Lower significance levels indicate the requirement of stronger evidence before rejecting the null hypothesis.
 It can be concluded that a statistical difference between the Hawaii temperatures.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 #### Bonus -Temperature Analysis 2
 
 Planning for the trip dates of August 1 to August 7 of this year, but concerned that the weather will be less than ideal. Use historical data in the dataset to find out what the temperature has previously been for this timeframe.
