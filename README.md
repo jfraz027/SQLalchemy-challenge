@@ -111,6 +111,48 @@ Use Flask to create the routes, as follows:
 
 * Use Flask `jsonify` to convert the API data into a valid JSON response object.
 
+#### Bonus Temperature Analysis 1
+
+Conduct an analysis to answer the following question: Hawaii is reputed to enjoy mild weather all year round. Is there a meaningful difference between the temperatures in, for example, June and December?
+
+* Use Pandas to perform the following steps:
+
+    * Convert the date column format from `string` to `datetime`.
+
+    * Set the date column as the DataFrame index.
+
+    * Drop the date column.
+
+* Identify the average temperature in June at all stations across all available years in the dataset. Do the same for the temperature in December.
+
+* Use the t-test to determine whether the difference in means, if any, is statistically significant. Will you use a paired t-test or an unpaired t-test? Why?
+
+The larger the absolute value of the t-value, the smaller the p-value, the greater the evidence against the null hypothesis.
+Use a paired t-test to compare the means of the same group. And the item under two separate scenarios. In this situation, 
+Hawaii temperatures are viewed at different times of the year.
+As inforamtion, an unpaired t-test compares the means of two independent or unrelated groups. 
+In an unpaired t-test, the variance between groups will be assumed equal.
+
+The null hypothesis assumes that the true mean difference between the paired samples is zero.
+In this case, June temperature  differs December temperatures.
+
+Interpreting the p value. The significance level views the probability of rejecting the null hypothesis when true.
+For example, a significance level of 0.05 indicates a 5% risk of concluding that a difference exists when no actual difference exists.
+Lower significance levels indicate the requirement of stronger evidence before rejecting the null hypothesis.
+It can be concluded that a statistical difference between the Hawaii temperatures.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #### Bonus -Temperature Analysis 2
 
